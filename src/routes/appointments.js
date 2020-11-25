@@ -31,7 +31,7 @@ module.exports = (db, updateAppointment) => {
       setTimeout(() => response.status(500).json({}), 1000);
       return;
     }
-
+console.log(request.body)
     const { student, interviewer } = request.body.interview;
 
     db.query(
